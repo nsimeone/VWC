@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <nav>
+        <ul style="display: flex; list-style: none; gap: 20px; justify-content: center; padding: 20px;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hero.html">About</a></li>
+            <li><a href="cards.html">Rinks</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="image-container">
+            <aside class="hero-image-wrapper">
+                <img src="images/1.jpg" alt="Professional Me" class="prof-pic" />
+                <img src="images/2.jpg" alt="Hockey Me" class="hockey-pic" />
+            </aside>
+            <ul>
+                <li><strong>Lifelong Learner</strong></li>
+                <li><strong>Hockey Player</strong></li>
+                <li><strong>Runner</strong></li>
+                <li><strong>World Traveler</strong></li>
+                <li><strong>Technical</strong></li>
+                <li><strong>Efficient</strong></li>
+            </ul>
+        </section>
+
+        <article>
+            <p>My name is Nick, I am in Seattle, WA. I love hockey, the community is one of the best communities I have ever been apart of.
+            It seems super tight-knit, I like how you can reach out to a teammate for anything and they will always be there for you. 
+            I started playing later in life, and it was one of the best decisions I have ever made. You are never too old to start and I try to 
+            apply the mentality to everything I do in life. </p> 
+            <br>
+            <p>When I am not playing hockey I am running. I have a goal to run around the entirety
+            of Lake Washington which will be about 63 miles. I have injured myself the last two years trying to achieve this goal, but I am hoping the third time is the charm!
+            I plan on visiting Europe soon, I would love to play hockey over there for a year - I have been leaning towards playing in Paris or Madrid
+            My Spanish is terrible, but my french is non-existent so I am leaning more towards Madrid. I would also like to return to Argentina or Mexico.</p>
+          </article>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Nick Simeone. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
