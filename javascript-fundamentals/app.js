@@ -71,4 +71,24 @@ function findLargest() {
     document.getElementById("findLargest").textContent = max; 
     
 }
-    
+
+function sumAll() {
+    let numbers = [1, 2, 3]
+    let sum = numbers.reduce((total, n) => total + n, 0);
+    document.getElementById("sumAll").textContent = sum; 
+
+}
+
+function removeDuplicateNumbers() {
+    let original = [1, 2, 2, 3]
+    let result = []; 
+    for (let i = 0; i<original.length; i++) {
+        let num = original[i];
+
+        if (!result.includes(num)) {
+            result.push(num)
+        }
+    }
+    document.getElementById("removeDuplicateNumbers").textContent = result; 
+
+}
